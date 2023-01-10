@@ -46,7 +46,7 @@ async function getNotes() {
     const [rows] = await pool.query(query, [id])
     return rows[0]
   }
-  
+  exports.getNote = getNote
   async function addNote(data) {
     const [result] = await pool.query(`
     INSERT INTO notes (title, contents)
