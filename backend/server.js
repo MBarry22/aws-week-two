@@ -1,5 +1,6 @@
 
-import mysqlDatabase from './mysqlDatabase'
+const mysqlDatabase = require('./mysqlDatabase')
+
 
 const express = require("express");
 const database = require("./database");
